@@ -1,0 +1,58 @@
+name: DXF验收广场（60×40米）
+width: 60.0
+height: 40.0
+elements:
+- type: entrance
+  x: 2.0
+  y: 20.0
+  radius: 1.5
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 入口1
+- type: entrance
+  x: 58.0
+  y: 20.0
+  radius: 1.5
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 入口2
+- type: bench
+  x: 20.0
+  y: 10.0
+  radius: 2.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 座椅/长椅1
+- type: tree
+  x: 30.0
+  y: 20.0
+  radius: 3.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 树荫1
+- type: chess_table
+  x: 40.0
+  y: 30.0
+  radius: 2.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 棋桌1
+source_import:
+  format: dxf
+  source_name: staysim_example_mm.dxf
+  sha256: 4193142448b8efc1e50d99a1aafcda31e02b2a4a4c0e2d3a0d988fe0cecee0d4
+  units: mm
+  scale_to_m: 0.001
+  origin:
+  - 250000.0
+  - 120000.0
+  coordinate_system: XY, x right, y up, metres
+  assumptions:
+  - 设施圆代表作用范围，不代表建筑、墙体或碰撞障碍。
+  - attractiveness=0.5、capacity=10、shade=false 为统一模型假设，未从 CAD 推断。
+  - 坐标保持 CAD 的 x 向右、y 向上；矩形左下角平移为 (0,0)，长度统一为米。

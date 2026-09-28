@@ -1,0 +1,48 @@
+# ============================================================
+# 场景：典型社区中心广场（改造后）
+# 编辑这个文件即可修改场景，无需改 Python 代码
+# ============================================================
+
+name: "社区中心广场（改造后）"
+description: "典型老旧社区中心广场，设施完善，有棋桌、健身区、儿童活动区、凉亭等"
+width: 100
+height: 80
+
+# 场景中的空间元素
+# type: bench(长椅) | tree(树木) | chess_table(棋桌) | exercise(健身器材)
+#       playground(儿童活动区) | fountain(水景) | pavilion(凉亭)
+#       flower_bed(花坛) | green_lawn(草坪) | entrance(入口)
+# attractiveness: 0.0-1.0，越高越吸引人停留
+# shade: true/false，是否有遮荫
+# capacity: 该设施能同时服务的人数
+
+elements:
+  # === 入口 ===
+  - { type: entrance, x: 10, y: 40, radius: 3, attractiveness: 0.3, label: "西入口" }
+  - { type: entrance, x: 90, y: 40, radius: 3, attractiveness: 0.3, label: "东入口" }
+
+  # === 休息设施 ===
+  - { type: bench, x: 30, y: 25, radius: 2, attractiveness: 0.7, shade: true, capacity: 3, label: "北侧长椅(遮荫)" }
+  - { type: bench, x: 45, y: 20, radius: 2, attractiveness: 0.6, shade: true, capacity: 3, label: "花坛边长椅" }
+  - { type: bench, x: 60, y: 55, radius: 2, attractiveness: 0.5, shade: false, capacity: 3, label: "健身区旁长椅" }
+  - { type: bench, x: 35, y: 60, radius: 2, attractiveness: 0.7, shade: true, capacity: 3, label: "南侧长椅(遮荫)" }
+
+  # === 绿化 ===
+  - { type: tree, x: 25, y: 35, radius: 4, attractiveness: 0.6, shade: true, label: "大槐树" }
+  - { type: tree, x: 50, y: 30, radius: 4, attractiveness: 0.6, shade: true, label: "银杏树" }
+  - { type: tree, x: 40, y: 50, radius: 4, attractiveness: 0.6, shade: true, label: "香樟树" }
+  - { type: tree, x: 65, y: 40, radius: 4, attractiveness: 0.6, shade: true, label: "梧桐树" }
+  - { type: tree, x: 30, y: 55, radius: 4, attractiveness: 0.5, shade: false, label: "小树" }
+  - { type: tree, x: 70, y: 25, radius: 4, attractiveness: 0.5, shade: false, label: "新栽树" }
+
+  # === 活动设施 ===
+  - { type: chess_table, x: 50, y: 45, radius: 3, attractiveness: 0.8, shade: true, capacity: 6, label: "中心棋桌" }
+  - { type: exercise, x: 65, y: 60, radius: 4, attractiveness: 0.65, shade: false, capacity: 8, label: "健身器材区" }
+  - { type: playground, x: 35, y: 35, radius: 5, attractiveness: 0.9, shade: false, capacity: 12, label: "儿童活动区" }
+
+  # === 景观 ===
+  - { type: fountain, x: 55, y: 40, radius: 3, attractiveness: 0.55, shade: false, label: "喷泉水景" }
+  - { type: pavilion, x: 20, y: 50, radius: 4, attractiveness: 0.75, shade: true, capacity: 8, label: "社区凉亭" }
+  - { type: flower_bed, x: 45, y: 55, radius: 2, attractiveness: 0.4, shade: false, label: "中心花坛" }
+  - { type: flower_bed, x: 70, y: 35, radius: 2, attractiveness: 0.4, shade: false, label: "路边花坛" }
+  - { type: green_lawn, x: 60, y: 45, radius: 4, attractiveness: 0.45, shade: false, label: "阳光草坪" }

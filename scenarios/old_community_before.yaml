@@ -1,0 +1,23 @@
+# ============================================================
+# 场景：老旧社区公共空间（改造前）
+# ============================================================
+
+name: "老旧社区公共空间（改造前）"
+description: "设施陈旧匮乏的老旧社区，缺乏遮荫和活动设施，仅有少量破旧座椅"
+width: 100
+height: 80
+
+elements:
+  - { type: entrance, x: 10, y: 40, radius: 3, attractiveness: 0.3, label: "入口" }
+  - { type: entrance, x: 90, y: 40, radius: 3, attractiveness: 0.3, label: "出口" }
+
+  # 仅1张破旧长椅，无遮荫
+  - { type: bench, x: 35, y: 50, radius: 2, attractiveness: 0.25, shade: false, capacity: 2, label: "破旧长椅" }
+
+  # 仅2棵树，无遮荫
+  - { type: tree, x: 40, y: 35, radius: 3, attractiveness: 0.3, shade: false, label: "孤树" }
+  - { type: tree, x: 60, y: 45, radius: 3, attractiveness: 0.3, shade: false, label: "孤树" }
+
+  # 大块光秃空地
+  - { type: green_lawn, x: 50, y: 40, radius: 6, attractiveness: 0.15, shade: false, label: "光秃草坪" }
+  - { type: green_lawn, x: 30, y: 30, radius: 4, attractiveness: 0.1, shade: false, label: "废弃空地" }

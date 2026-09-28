@@ -1,0 +1,106 @@
+name: 社区广场验收场景
+width: 80.0
+height: 50.0
+elements:
+- type: entrance
+  x: 2.0
+  y: 25.0
+  radius: 2.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 入口1
+- type: entrance
+  x: 78.0
+  y: 25.0
+  radius: 2.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 入口2
+- type: bench
+  x: 25.0
+  y: 12.0
+  radius: 2.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 座椅/长椅1
+- type: bench
+  x: 30.0
+  y: 40.0
+  radius: 2.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 座椅/长椅2
+- type: bench
+  x: 55.0
+  y: 25.0
+  radius: 2.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 座椅/长椅3
+- type: tree
+  x: 18.0
+  y: 20.0
+  radius: 3.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 树荫1
+- type: tree
+  x: 38.0
+  y: 15.0
+  radius: 3.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 树荫2
+- type: tree
+  x: 62.0
+  y: 35.0
+  radius: 3.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 树荫3
+- type: tree
+  x: 45.0
+  y: 42.0
+  radius: 3.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 树荫4
+- type: chess_table
+  x: 40.0
+  y: 25.0
+  radius: 2.5
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 棋桌1
+- type: pavilion
+  x: 65.0
+  y: 15.0
+  radius: 4.0
+  attractiveness: 0.5
+  shade: false
+  capacity: 10
+  label: 凉亭1
+source_import:
+  format: dxf
+  source_name: community_square_acceptance.dxf
+  sha256: df6aa6103dde8fbfb60f2b69d05cbb72b80734b5b46270573efffc9fa69d9e3d
+  units: m
+  scale_to_m: 1.0
+  origin:
+  - 0.0
+  - 0.0
+  coordinate_system: XY, x right, y up, metres
+  assumptions:
+  - 设施圆代表作用范围，不代表建筑、墙体或碰撞障碍。
+  - attractiveness=0.5、capacity=10、shade=false 为统一模型假设，未从 CAD 推断。
+  - 坐标保持 CAD 的 x 向右、y 向上；矩形左下角平移为 (0,0)，长度统一为米。
