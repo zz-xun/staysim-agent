@@ -1,6 +1,8 @@
-# Architecture
+# Architecture / 架构
 
 StaySim Agent separates the application workflow from the simulation domain.
+
+StaySim Agent 将应用工作流与模拟领域内核分离。
 
 ```text
 Gradio / CLI
@@ -26,3 +28,5 @@ The preparation model can inspect a scenario and validate a configuration. It ca
 ## Failure handling
 
 Missing fields interrupt for clarification. A changed request invalidates the previous plan and approval. A completed execution with a valid receipt is reused on duplicate approval. An execution record without a complete receipt is marked uncertain rather than silently rerun.
+
+缺少参数时流程会暂停并追问；需求变化会使旧计划和确认失效；已有完整回执的任务在重复确认时复用；只有执行记录但没有完整回执时标记为 uncertain，不会静默重跑。
