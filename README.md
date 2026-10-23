@@ -29,6 +29,16 @@ StaySim Agent turns a natural-language simulation request and a normalized 2D DX
 _场景导入、需求规划、人工确认和结果查看位于同一工作台。  
 Scene import, planning, human approval, and result review in one workspace._
 
+## 演示视频 | Video demos
+
+[在线查看两段实录 | Watch both demos](https://zz-xun.github.io/#staysim-demos) · [视频文件与说明 | Files and notes](docs/demos/README.md)
+
+| 模拟分析 / Simulation & analysis | Agent 工作台 / Agent workspace |
+| --- | --- |
+| [![模拟分析演示，点击观看](docs/demos/staysim-product-poster.jpg)](https://zz-xun.github.io/#demo-product) | [![Agent 工作台演示，点击观看](docs/demos/staysim-agent-poster.jpg)](https://zz-xun.github.io/#demo-agent) |
+| 人群配置、历史结果回放与分析图查看。 / Population settings, history playback, and analysis charts. | 需求填写、离线规则演示与结果查看。 / Request entry, an offline rule-mode demo, and result review. |
+| **00:41** · [MP4](docs/demos/staysim-product-demo.mp4) | **01:59** · [MP4](docs/demos/staysim-agent-demo.mp4) |
+
 ## 核心能力 | Capabilities
 
 - **DXF 场景导入 | DXF import**：单位换算、坐标归一化、预览和 YAML 发布。  
